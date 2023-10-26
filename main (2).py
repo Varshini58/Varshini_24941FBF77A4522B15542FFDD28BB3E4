@@ -1,5 +1,47 @@
-num=int(input("Enter the year"))
-if num%4==0:
-  print("The year is leap year",num)
-else:
-  print("The year is no leap year",num)
+class Bankaccount:
+  def __init__(self):
+    self.balance=0
+    print("Bankaccount Details")
+  def deposit (self):
+    amount=float(input("Enter the amount:"))
+    self.balance+=amount
+    print("amount is deposited in your amount",amount)
+  def Withdraw (self):
+    amount=float(input("Enter the amount:"))
+    if self.balance>=amount:
+      self.balance-=amount
+      print("your Withdraw:", amount)
+    else:
+      print("you don't have enough money ")
+  def display (self):
+      print("Available Balance:",self.balance)
+s=Bankaccount()
+s.deposit()
+s.Withdraw()
+s.display()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+      
+      
+    
+    
+    
+    
